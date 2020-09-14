@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web layout</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        h1{
+            color: brown;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 35px;
+            text-decoration: underline;
+        }
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p{
+            text-align: center;
+            color: red;
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Cultural Foods of India</h1>
+    <p>Click on any part of the image to know more about these foods.</p>
+    <img src="image/indian_cuisine.png" usemap="#map1">
+    <map id="map1" name="map1">
+        <area href="cultural.html" shape="rect" coords="35,44,327,196"/>
+        <area href="intro/punjab.html" shape="rect" coords="332,43,625,196"/>
+        <area href="intro/gujrat.html" shape="rect" coords="630,44,924,196"/>
+        <area href="intro/hyderabad.html" shape="rect" coords="34,198,327,377"/>
+        <area href="intro/j&k.html" shape="rect" coords="331,201,625,375"/>
+        <area href="intro/karela.html" shape="rect" coords="631,203,921,379"/>
+        <area href="intro/rajasthan.html" shape="rect" coords="33,384,327,596"/>
+        <area href="intro/south.html" shape="rect" coords="332,382,625,595"/>
+        <area href="intro/up.html" shape="rect" coords="630,387,923,596"/>
+    </map>
 </body>
 </html>
