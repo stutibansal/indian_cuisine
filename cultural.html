@@ -9,6 +9,33 @@
             margin: 0;
             padding: 0;
         }
+        ul{
+        margin: 0px auto;
+        width: 100%;
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        background-color: darksalmon;
+    }
+    ul li{
+        display: inline-block;
+    }
+    ul li a{
+        display: block;
+        width: 100px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        padding: 15px 20px;
+        font-weight: bolder;
+    }
+    ul li a:hover{
+        background-color:hotpink;
+        color: black;
+    }
         header{
             background-color: crimson;
             margin: 10px;
@@ -45,7 +72,7 @@
             background-color: skyblue;
             color: firebrick;
         }
-        a{
+        div a{
             margin: 10px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 25px;
@@ -54,7 +81,7 @@
             color: lightcyan;
             padding: 15px;
         }
-        a:hover{
+        div a:hover{
             background-color: turquoise;
             color: white;
             font-size: 35px;
@@ -74,6 +101,15 @@
         <header>
             <h1>Indian Cuisine</h1>
         </header>
+        <ul>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </ul>
         <section>
             <img src="image/food.jpg">
         <p>
@@ -97,7 +133,9 @@
         <p>
             Click on the below link! 
         </p>
+        <div>
         <a href="food.html">CULTURAL FOODS</a>
+        </div>
     </section>
     <footer>
         <h1>THANK YOU!</h1>
